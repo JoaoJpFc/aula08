@@ -70,6 +70,7 @@ produtos.formulario.addEventListener("submit", (evento) => {
     quantidade: produtos.quantidade.value,
     nome: produtos.nome.value,
     valor: produtos.valor.value,
+    soma: produtos.quantidade.value * produtos.valor.value, 
   }
 
   listaProdutos(item);
@@ -82,9 +83,3 @@ function listaProdutos(item){
   console.log(produtos.lista);
 }
 
-function Resultado(produtos){
-  soma = produtos.quantidade.value * produtos.preco.value
-  array.forEach(element => {
-    
-  });
-}
