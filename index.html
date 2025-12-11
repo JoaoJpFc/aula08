@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Formulário de Pedidos</title>
+  </head>
+  <body>
+    <form id="form-cliente" action="">
+      <div>
+        <fieldset id="fieldset-cliente">
+          <legend>Dados do Cliente</legend>
+          <label for="nome-cliente">Nome do Cliente</label>
+          <input type="text" name="nome-cliente" id="nome-cliente" />
+          <label for="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpf" />
+        </fieldset>
+      </div>
+      
+      <div>
+        <fieldset id="fieldset-endereco">
+          <legend>Endereço</legend>
+          
+        <div id="div-cep">
+          <label for="cep">CEP</label>
+          <input type="number" name="cep" id="cep" />
+        </div>
+      
+        <div id="div-logradouro">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" name="logradouro" id="logradouro" />
+        </div>
+
+        <div id="numero">
+          <label for="numero">Numero</label>
+          <input type="text" name="numero" id="numero" />
+          </div>
+
+         <div id ="div-complemento">
+          <label for="complemento">Complemento</label>
+          <input type="text" name="complemento" id="complemento" />
+         </div>
+
+        <div id="div-bairro">
+          <label for="bairro">Bairro</label>
+          <input type="text" name="bairro" id="bairro" />
+          <label for="cidade">Cidade</label>
+          <input type="text" name="cidade" id="cidade" />
+          <label for="uf">UF</label>
+          <input type="text" name="uf" id="uf" />
+          </div>
+          
+        </fieldset>
+        <button>SALVAR</button>
+      </div>
+    </form>
+
+        <form id="form-produto" action="">
+         
+          <fieldset id="fieldset-produto">
+          <legend>Digite o produto</legend>
+          
+          <div id="quantidade-conteiner">
+          <label for="quantidade">Quantidade</label>
+          <input type="number" name="quantidade" id="quantidade" />
+          </div>
+
+          <div id="produto-conteiner">
+          <label for="produto">Nome</label>
+          <input type="text" name="produto" id="produto" />
+          </div>
+
+          <div id="preco-conteiner">
+          <label for="preco">Preço</label>
+          <input type="number" name="preco" id="preco" />
+          </div>
+       
+        </fieldset>
+        <button>CADASTRAR</button>
+        </form>
+  </body>
+</html>
